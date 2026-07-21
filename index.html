@@ -1,343 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#071737" />
-  <meta name="description" content="Shobhit Gift & Stationary — stationery, gifts, art supplies, school essentials and party packing." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#081735">
+  <meta name="description" content="Shobhit Gift & Stationary — stationery, school supplies, art materials, gifts and packing.">
   <title>Shobhit Gift & Stationary</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#home" class="brand" aria-label="Shobhit Gift & Stationary home">
-        <img src="logo.png" alt="Shobhit Gift & Stationary logo" />
-        <div>
-          <strong>SHOBHIT</strong>
-          <span>Gift & Stationary</span>
-        </div>
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Shobhit home">
+        <img src="logo.png" alt="Shobhit Gift and Stationary logo">
+        <span><strong>SHOBHIT</strong><small>Gift & Stationary</small></span>
       </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+        <i></i><i></i><i></i>
       </button>
 
-      <nav class="main-nav">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#categories">Categories</a>
         <a href="#products">Products</a>
         <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Visit Store</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-call" href="tel:+918882808088">Call Store</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-blob blob-one"></div>
-      <div class="hero-blob blob-two"></div>
+    <section class="hero">
+      <div class="hero-orb orb-pink"></div>
+      <div class="hero-orb orb-teal"></div>
 
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow">
-            <span class="pulse-dot"></span>
-            Your neighbourhood creative store
-          </div>
-
-          <h1>
-            Stationery that makes
-            <span class="gradient-text">ideas feel exciting.</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            Notebooks, pens, school supplies, art materials, gifts and custom packing —
-            all under one colourful roof.
-          </p>
+          <span class="eyebrow"><b></b> Your neighbourhood creative store</span>
+          <h1>Make every idea <em>look better.</em></h1>
+          <p>Stationery, art materials, school essentials, thoughtful gifts and quick packing — conveniently available at your local store.</p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#products">Explore Products</a>
-            <a class="btn btn-light" href="https://wa.me/918882808088?text=Hi%20Shobhit%20Gift%20%26%20Stationary%2C%20I%20want%20to%20check%20product%20availability." target="_blank" rel="noreferrer">
+            <a class="button primary" href="#products">Explore Products</a>
+            <a class="button secondary" target="_blank" rel="noreferrer"
+               href="https://wa.me/918882808088?text=Hi%20Shobhit%20Gift%20%26%20Stationary%2C%20I%20want%20to%20check%20product%20availability.">
               WhatsApp Store
             </a>
           </div>
 
-          <div class="trust-row">
+          <div class="trust">
             <div><strong>100+</strong><span>Daily essentials</span></div>
-            <div><strong>Fast</strong><span>Gift packing</span></div>
+            <div><strong>Quick</strong><span>Gift packing</span></div>
             <div><strong>Local</strong><span>Friendly service</span></div>
           </div>
         </div>
 
-        <div class="hero-visual reveal reveal-delay">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-
-          <div class="hero-card main-card">
-            <div class="mini-badge">Best Sellers</div>
-            <div class="product-stack">
-              <div class="notebook mock-item">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="pen mock-item"></div>
-              <div class="pencil mock-item"></div>
-              <div class="ruler mock-item"></div>
+        <div class="showcase-wrap reveal delay">
+          <div class="glass-stage">
+            <div class="stage-light"></div>
+            <div class="video-shell">
+              <video id="brandVideo" autoplay muted loop playsinline preload="metadata"
+                     poster="video-poster.jpg" aria-label="Shobhit brand animation">
+                <source src="splash_video.mp4" type="video/mp4">
+              </video>
+              <div class="video-vignette"></div>
             </div>
-            <div class="main-card-copy">
-              <span>Back to School Kit</span>
-              <strong>Everything in one place</strong>
-            </div>
+
+            <button id="audioToggle" class="audio-toggle" type="button" aria-pressed="false" aria-label="Turn music on">
+              <span class="audio-icon">
+                <i class="bar b1"></i><i class="bar b2"></i><i class="bar b3"></i><i class="bar b4"></i>
+              </span>
+              <span class="audio-text">Play sound</span>
+            </button>
+
+            <audio id="brandAudio" src="audio.mp3" preload="metadata"></audio>
           </div>
 
-          <div class="floating-card float-a">
-            <div class="float-icon">✦</div>
-            <div><strong>Gift Packing</strong><span>Quick & neat</span></div>
-          </div>
-
-          <div class="floating-card float-b">
-            <div class="float-icon">₹</div>
-            <div><strong>Value Deals</strong><span>For students</span></div>
-          </div>
-
-          <div class="floating-pill">Write • Gift • Inspire</div>
+          <div class="float-chip chip-one"><span>✦</span> Premium stationery</div>
+          <div class="float-chip chip-two"><span>🎁</span> Gift-ready</div>
         </div>
       </div>
     </section>
 
-    <section class="ticker" aria-label="Store categories">
-      <div class="ticker-track">
-        <span>Notebooks</span><i>✦</i>
-        <span>Pens & Pencils</span><i>✦</i>
-        <span>Art Supplies</span><i>✦</i>
-        <span>School Essentials</span><i>✦</i>
-        <span>Gift Items</span><i>✦</i>
-        <span>Birthday Packing</span><i>✦</i>
-        <span>Notebooks</span><i>✦</i>
-        <span>Pens & Pencils</span><i>✦</i>
-        <span>Art Supplies</span><i>✦</i>
+    <section class="marquee" aria-label="Shop highlights">
+      <div class="marquee-track">
+        <span>Notebooks</span><b>✦</b><span>Pens & Pencils</span><b>✦</b>
+        <span>Art Supplies</span><b>✦</b><span>School Essentials</span><b>✦</b>
+        <span>Gift Packing</span><b>✦</b><span>Birthday Items</span><b>✦</b>
+        <span>Notebooks</span><b>✦</b><span>Pens & Pencils</span><b>✦</b>
+        <span>Art Supplies</span><b>✦</b>
       </div>
     </section>
 
     <section class="section" id="categories">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">Shop by category</span>
-            <h2>Everyday essentials, neatly organised.</h2>
-          </div>
-          <p>Find the right supplies for school, office, hobbies, gifting and celebrations.</p>
+        <div class="section-heading reveal">
+          <div><span class="kicker">Shop by category</span><h2>Everything arranged around your needs.</h2></div>
+          <p>For school, work, hobbies, gifting and last-minute celebrations.</p>
         </div>
 
         <div class="category-grid">
-          <article class="category-card cat-blue reveal">
-            <div class="category-icon">📘</div>
-            <h3>Notebooks & Diaries</h3>
-            <p>Classmate-style notebooks, registers, journals and planners.</p>
-            <a href="#products">View collection →</a>
-          </article>
-
-          <article class="category-card cat-pink reveal">
-            <div class="category-icon">🖊️</div>
-            <h3>Pens & Writing</h3>
-            <p>Gel pens, ball pens, pencils, markers, highlighters and refills.</p>
-            <a href="#products">View collection →</a>
-          </article>
-
-          <article class="category-card cat-yellow reveal">
-            <div class="category-icon">🎨</div>
-            <h3>Art & Craft</h3>
-            <p>Colours, sketchbooks, brushes, chart paper and creative kits.</p>
-            <a href="#products">View collection →</a>
-          </article>
-
-          <article class="category-card cat-teal reveal">
-            <div class="category-icon">🎁</div>
-            <h3>Gifts & Packing</h3>
-            <p>Gift items, birthday accessories, wrapping and custom packing.</p>
-            <a href="#services">Explore service →</a>
-          </article>
+          <article class="category blue reveal"><span class="category-icon">📘</span><h3>Notebooks & Diaries</h3><p>Registers, journals, planners and everyday notebooks.</p><a href="#products">Explore →</a></article>
+          <article class="category pink reveal"><span class="category-icon">🖊️</span><h3>Pens & Writing</h3><p>Gel pens, pencils, markers, refills and highlighters.</p><a href="#products">Explore →</a></article>
+          <article class="category yellow reveal"><span class="category-icon">🎨</span><h3>Art & Craft</h3><p>Colours, brushes, sketchbooks and creative supplies.</p><a href="#products">Explore →</a></article>
+          <article class="category green reveal"><span class="category-icon">🎁</span><h3>Gifts & Packing</h3><p>Gift items, wrapping and birthday accessories.</p><a href="#services">Explore →</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section products-section" id="products">
+    <section class="section products" id="products">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">Popular picks</span>
-            <h2>Products customers ask for most.</h2>
-          </div>
-          <div class="filter-pills" role="group" aria-label="Product filters">
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter="school">School</button>
-            <button class="filter" data-filter="writing">Writing</button>
-            <button class="filter" data-filter="creative">Creative</button>
+        <div class="section-heading reveal">
+          <div><span class="kicker">Popular picks</span><h2>Local favourites, ready when you are.</h2></div>
+          <div class="filters" aria-label="Filter products">
+            <button class="filter active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="school" type="button">School</button>
+            <button class="filter" data-filter="writing" type="button">Writing</button>
+            <button class="filter" data-filter="creative" type="button">Creative</button>
           </div>
         </div>
 
         <div class="product-grid">
           <article class="product-card reveal" data-category="school">
-            <div class="product-media media-notebook">
-              <span class="product-label">Best seller</span>
-              <div class="product-illustration notebook-set">
-                <i></i><i></i><i></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="brand-tag">Student Essential</span>
-              <h3>Premium Notebook Set</h3>
-              <div class="price-row"><strong>From ₹40</strong><span>Multiple sizes</span></div>
-              <button class="add-btn" data-product="Premium Notebook Set">Check Availability</button>
-            </div>
+            <div class="product-art notebook-art"><span>Best seller</span><div class="books"><i></i><i></i><i></i></div></div>
+            <div class="product-copy"><small>Student essential</small><h3>Premium Notebook Set</h3><p>Multiple page counts and sizes.</p><div><strong>From ₹40</strong><button data-product="Premium Notebook Set" type="button">Ask store</button></div></div>
           </article>
-
           <article class="product-card reveal" data-category="writing">
-            <div class="product-media media-pens">
-              <span class="product-label label-new">New</span>
-              <div class="product-illustration pen-pack">
-                <i></i><i></i><i></i><i></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="brand-tag">Smooth Writing</span>
-              <h3>Colour Gel Pen Pack</h3>
-              <div class="price-row"><strong>From ₹60</strong><span>Assorted colours</span></div>
-              <button class="add-btn" data-product="Colour Gel Pen Pack">Check Availability</button>
-            </div>
+            <div class="product-art pen-art"><span>Colour pick</span><div class="pens"><i></i><i></i><i></i><i></i></div></div>
+            <div class="product-copy"><small>Smooth writing</small><h3>Colour Gel Pen Pack</h3><p>Assorted colours for notes and art.</p><div><strong>From ₹60</strong><button data-product="Colour Gel Pen Pack" type="button">Ask store</button></div></div>
           </article>
-
           <article class="product-card reveal" data-category="creative">
-            <div class="product-media media-art">
-              <span class="product-label">Creative pick</span>
-              <div class="product-illustration color-box">
-                <i></i><i></i><i></i><i></i><i></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="brand-tag">Art & Craft</span>
-              <h3>Colouring Essentials Kit</h3>
-              <div class="price-row"><strong>From ₹99</strong><span>Kids & hobbyists</span></div>
-              <button class="add-btn" data-product="Colouring Essentials Kit">Check Availability</button>
-            </div>
+            <div class="product-art color-art"><span>Creative pick</span><div class="colors"><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="product-copy"><small>Art & craft</small><h3>Colouring Essentials Kit</h3><p>For children, students and hobbyists.</p><div><strong>From ₹99</strong><button data-product="Colouring Essentials Kit" type="button">Ask store</button></div></div>
           </article>
-
           <article class="product-card reveal" data-category="school">
-            <div class="product-media media-kit">
-              <span class="product-label label-hot">Popular</span>
-              <div class="product-illustration geometry-kit">
-                <i class="box"></i><i class="scale"></i><i class="triangle"></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="brand-tag">School Ready</span>
-              <h3>Geometry Box & Tools</h3>
-              <div class="price-row"><strong>From ₹75</strong><span>Complete set</span></div>
-              <button class="add-btn" data-product="Geometry Box & Tools">Check Availability</button>
-            </div>
+            <div class="product-art geometry-art"><span>School ready</span><div class="geometry"><i></i><b></b></div></div>
+            <div class="product-copy"><small>Classroom essential</small><h3>Geometry Box & Tools</h3><p>Complete tools for everyday classes.</p><div><strong>From ₹75</strong><button data-product="Geometry Box & Tools" type="button">Ask store</button></div></div>
           </article>
-
           <article class="product-card reveal" data-category="writing">
-            <div class="product-media media-marker">
-              <span class="product-label">Office pick</span>
-              <div class="product-illustration marker-set">
-                <i></i><i></i><i></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="brand-tag">Desk Essential</span>
-              <h3>Marker & Highlighter Set</h3>
-              <div class="price-row"><strong>From ₹80</strong><span>Bright shades</span></div>
-              <button class="add-btn" data-product="Marker & Highlighter Set">Check Availability</button>
-            </div>
+            <div class="product-art marker-art"><span>Office pick</span><div class="markers"><i></i><i></i><i></i></div></div>
+            <div class="product-copy"><small>Desk essential</small><h3>Marker & Highlighter Set</h3><p>Bright shades for study and office.</p><div><strong>From ₹80</strong><button data-product="Marker and Highlighter Set" type="button">Ask store</button></div></div>
           </article>
-
           <article class="product-card reveal" data-category="creative">
-            <div class="product-media media-gift">
-              <span class="product-label label-new">Gift ready</span>
-              <div class="product-illustration gift-box">
-                <i class="gift-body"></i><i class="ribbon-v"></i><i class="ribbon-h"></i><i class="bow"></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="brand-tag">Celebration</span>
-              <h3>Gift Packing Combo</h3>
-              <div class="price-row"><strong>From ₹50</strong><span>Custom options</span></div>
-              <button class="add-btn" data-product="Gift Packing Combo">Check Availability</button>
-            </div>
+            <div class="product-art gift-art"><span>Gift-ready</span><div class="giftbox"><i></i><b></b></div></div>
+            <div class="product-copy"><small>Celebration</small><h3>Gift Packing Combo</h3><p>Custom wrapping for every occasion.</p><div><strong>From ₹50</strong><button data-product="Gift Packing Combo" type="button">Ask store</button></div></div>
           </article>
         </div>
-
-        <div class="product-note reveal">
-          <span>Looking for a specific brand or item?</span>
-          <a href="https://wa.me/918882808088?text=Hi%2C%20I%20am%20looking%20for%20a%20specific%20stationery%20item." target="_blank" rel="noreferrer">Ask on WhatsApp →</a>
-        </div>
       </div>
     </section>
 
-    <section class="section services" id="services">
+    <section class="section service-section" id="services">
       <div class="container service-grid">
-        <div class="service-visual reveal">
-          <div class="service-card service-card-one">
-            <span>01</span>
-            <h3>Book Binding</h3>
-            <p>Neat binding for notes, projects and documents.</p>
-          </div>
-          <div class="service-card service-card-two">
-            <span>02</span>
-            <h3>Gift Packing</h3>
-            <p>Fast, beautiful packing for every occasion.</p>
-          </div>
-          <div class="service-card service-card-three">
-            <span>03</span>
-            <h3>Birthday Supplies</h3>
-            <p>Decor, candles, caps and celebration essentials.</p>
-          </div>
+        <div class="service-cards reveal">
+          <article><b>01</b><h3>Book Binding</h3><p>Clean binding for notes, projects and documents.</p></article>
+          <article><b>02</b><h3>Gift Packing</h3><p>Quick, neat and attractive packing for every occasion.</p></article>
+          <article><b>03</b><h3>Birthday Supplies</h3><p>Decorations, candles, caps and party essentials.</p></article>
         </div>
-
         <div class="service-copy reveal">
-          <span class="section-kicker">More than stationery</span>
-          <h2>Small services that save your time.</h2>
-          <p>
-            From last-minute school projects to birthday gifts, we help customers
-            finish things quickly and neatly.
-          </p>
-
-          <ul class="check-list">
-            <li><span>✓</span> Book and project binding</li>
-            <li><span>✓</span> Gift wrapping and packing</li>
-            <li><span>✓</span> Birthday and party supplies</li>
-            <li><span>✓</span> School and office bulk orders</li>
+          <span class="kicker">More than stationery</span>
+          <h2>Useful services that save your time.</h2>
+          <p>From a last-minute school project to a birthday gift, the store helps you finish things quickly and neatly.</p>
+          <ul>
+            <li>✓ Book and project binding</li>
+            <li>✓ Gift wrapping and packing</li>
+            <li>✓ Birthday and party supplies</li>
+            <li>✓ School and office bulk orders</li>
           </ul>
-
-          <a class="btn btn-primary" href="tel:+918882808088">Call 88828 08088</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="container about-card reveal">
-        <div class="about-logo">
-          <img src="logo.png" alt="Shobhit Gift & Stationary logo" />
-        </div>
-        <div class="about-copy">
-          <span class="section-kicker">Your local store</span>
-          <h2>Friendly service. Useful products. Fair prices.</h2>
-          <p>
-            Shobhit Gift & Stationary is built for students, parents, teachers,
-            office-goers and anyone who loves good stationery. Visit for everyday
-            essentials, creative supplies and thoughtful gifts.
-          </p>
-        </div>
-        <div class="about-quote">
-          <span>“</span>
-          <p>Everything you need, all in one place.</p>
+          <a class="button primary" href="tel:+918882808088">Call 88828 08088</a>
         </div>
       </div>
     </section>
@@ -345,70 +178,39 @@
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
         <div class="contact-copy reveal">
-          <span class="section-kicker">Visit or contact us</span>
-          <h2>Need something today? Ask before you visit.</h2>
-          <p>Send the product name or a photo on WhatsApp and confirm availability instantly.</p>
-
-          <div class="contact-list">
-            <a href="tel:+918882808088">
-              <span class="contact-icon">☎</span>
-              <div><small>Call us</small><strong>88828 08088</strong></div>
-            </a>
-            <a href="https://wa.me/918882808088" target="_blank" rel="noreferrer">
-              <span class="contact-icon">✆</span>
-              <div><small>WhatsApp</small><strong>Chat with the store</strong></div>
-            </a>
-            <div>
-              <span class="contact-icon">⌖</span>
-              <div><small>Store address</small><strong>Add exact locality and address here</strong></div>
-            </div>
+          <span class="kicker">Visit or contact us</span>
+          <h2>Ask before you visit. Save time.</h2>
+          <p>Send the product name or photo on WhatsApp and confirm availability.</p>
+          <div class="contact-items">
+            <a href="tel:+918882808088"><span>☎</span><div><small>Call</small><strong>88828 08088</strong></div></a>
+            <a target="_blank" rel="noreferrer" href="https://wa.me/918882808088"><span>✆</span><div><small>WhatsApp</small><strong>Chat with the store</strong></div></a>
+            <div><span>⌖</span><div><small>Store address</small><strong>Add exact locality and address here</strong></div></div>
           </div>
         </div>
 
-        <form class="enquiry-form reveal" id="enquiryForm">
-          <div class="form-head">
-            <span>Quick Enquiry</span>
-            <strong>Tell us what you need</strong>
-          </div>
-          <label>
-            Your name
-            <input type="text" id="name" placeholder="Enter your name" required />
-          </label>
-          <label>
-            Product or service
-            <input type="text" id="item" placeholder="e.g. notebooks, gift packing" required />
-          </label>
-          <label>
-            Message
-            <textarea id="message" rows="4" placeholder="Quantity, brand preference or any details"></textarea>
-          </label>
-          <button class="btn btn-primary form-button" type="submit">Send on WhatsApp</button>
-          <small>No online payment. This opens a WhatsApp enquiry.</small>
+        <form id="enquiryForm" class="enquiry reveal">
+          <span class="kicker">Quick enquiry</span>
+          <h3>Tell us what you need</h3>
+          <label>Name<input id="name" required placeholder="Your name"></label>
+          <label>Product or service<input id="item" required placeholder="e.g. notebooks, gift packing"></label>
+          <label>Details<textarea id="message" rows="4" placeholder="Quantity, brand or other details"></textarea></label>
+          <button class="button primary" type="submit">Send on WhatsApp</button>
+          <small>This opens WhatsApp; no online payment is collected.</small>
         </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="logo.png" alt="" />
-        <div><strong>SHOBHIT</strong><span>Gift & Stationary</span></div>
-      </div>
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#top"><img src="logo.png" alt=""><span><strong>SHOBHIT</strong><small>Gift & Stationary</small></span></a>
       <p>Stationery, art supplies, gifts and everyday essentials.</p>
-      <div class="footer-links">
-        <a href="#products">Products</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <nav><a href="#products">Products</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Shobhit Gift & Stationary</span>
-      <span>Designed for your neighbourhood.</span>
-    </div>
+    <div class="container footer-bottom"><span>© <i id="year"></i> Shobhit Gift & Stationary</span><span>Designed for your neighbourhood.</span></div>
   </footer>
 
-  <div class="toast" id="toast">Opening WhatsApp…</div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>

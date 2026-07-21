@@ -1,35 +1,27 @@
-# Shobhit Gift & Stationary Website
+# Shobhit Gift & Stationary — Premium Website
 
-A responsive, Gen Z-style static website designed for GitHub Pages.
+## Files to upload to GitHub
+
+Upload every file in this folder directly to the root of your repository:
+
+- index.html
+- styles.css
+- script.js
+- logo.png
+- splash_video.mp4
+- video-poster.jpg
+- audio.mp3
 
 ## Before publishing
 
-Open `index.html` and replace:
+In `index.html`, replace:
 
 `Add exact locality and address here`
 
-with the shop's complete address.
+with the shop's actual address.
 
-The phone and WhatsApp number are already set to:
+## GitHub Pages
 
-`88828 08088`
+Repository Settings → Pages → Deploy from a branch → main → /(root) → Save.
 
-## Run locally
-
-Double-click `index.html`, or use VS Code Live Server.
-
-## Publish free with GitHub Pages
-
-1. Create a new GitHub repository.
-2. Upload all files from this folder.
-3. Open repository **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select the `main` branch and `/root`.
-6. Save. GitHub will provide a public website link.
-
-## Files
-
-- `index.html` — website structure
-- `styles.css` — design and responsive layout
-- `script.js` — animations, filters and WhatsApp enquiries
-- `logo.png` — shop logo
+The video is muted and loops automatically. The separate music track plays only after the visitor presses the sound button, as required by browser autoplay policies.
